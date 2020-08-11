@@ -1,0 +1,384 @@
+img {
+  max-width: 100%;
+}
+
+body, html {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background: green;
+}
+
+header {
+  background: #442e72;
+}
+
+.topBar {
+  display: flex;
+  padding: 10px 20px;
+  align-items: str;
+  justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+  .topBar > div:last-child {
+    margin-right: 30px;
+  }
+}
+.topBar > div:last-child .login_menu > a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 14px 0;
+  padding-right: 20px;
+}
+.topBar > div:last-child .dropdown-menu a {
+  font-size: 0.9rem;
+  padding: 10px 15px;
+}
+.topBar > div:last-child .dropdown-menu {
+  padding: 0;
+  border-radius: 0px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.topBar > div:last-child .dropdown-item:hover, .topBar > div:last-child .dropdown-item:active, .topBar > div:last-child .dropdown-item:focus {
+  background: #7359a6;
+  color: #fff;
+}
+.topBar > div:last-child .dropdown-toggle::after {
+  display: none;
+}
+.topBar > div:last-child .dropdown-toggle {
+  background: url("../assets/down_arrow.png") no-repeat center right;
+}
+
+.action, .panelFooter .footerNav, nav ul li a.hasChild:after, nav ul li a {
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+nav {
+  min-width: 262px;
+  background: #211638;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 50px;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  text-decoration: none !important;
+}
+
+.flexElem {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  max-width: 100%;
+}
+
+nav ul li a.hasChild {
+  position: relative;
+  padding-right: 45px;
+}
+
+nav ul li a.hasChild:after {
+  content: "";
+  background: url("../assets/down_arrow.png") no-repeat center;
+  display: block;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 20px;
+}
+
+nav ul li a.hasChild.open:after {
+  transform: rotate(180deg);
+}
+
+nav ul li a:hover {
+  background-color: #7359a6;
+}
+
+nav ul li a img {
+  margin-right: 15px;
+}
+
+nav + div {
+  background: #fff;
+  margin: 20px;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 30px;
+}
+
+main {
+  background: #e9eef3;
+  display: flex;
+  justify-content: space-between;
+  min-height: calc(100vh - 158px);
+}
+
+.inputControl {
+  border-radius: 2px;
+  border: 1px solid #bebebe;
+  padding: 10px;
+  width: 245px;
+  max-width: 100%;
+  outline-color: #7359a6;
+}
+@media (min-width: 992px) {
+  .inputControl {
+    margin-left: 20px;
+  }
+}
+
+.inputControl.searchIcon {
+  background: url("../assets/search_icon.png") no-repeat calc(100% - 15px) center, #fff;
+  padding-right: 40px;
+}
+
+.inputControl.calendarIcon {
+  background: url("../assets/calendar_icon.png") no-repeat calc(100% - 15px) center, #fff;
+  padding-right: 40px;
+}
+
+.panelHeader {
+  justify-content: space-between;
+}
+
+.hasChild + ul {
+  width: calc(100% - 20px);
+  background: #442e72;
+  margin: 0 0 20px 20px;
+}
+.hasChild + ul li a {
+  margin-bottom: 0;
+}
+.hasChild + ul li + li a {
+  border-top: 1px solid #7359a6;
+}
+
+.panelFooter {
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.panelFooter .footerNav {
+  padding: 10px;
+  width: 100%;
+  max-width: 180px;
+  background: #e3e1e5;
+  border: none;
+  outline-color: #7359a6;
+  text-decoration: none;
+  text-align: center;
+}
+.panelFooter button.footerNav:hover, .panelFooter a.footerNav:hover {
+  background: #7359a6;
+  color: #fff;
+}
+.panelFooter .footerNav.input {
+  width: 100%;
+  max-width: 100px;
+}
+.panelFooter .footerNav.input:focus {
+  background: #f5f5f5;
+}
+.panelFooter .flexElem {
+  flex-basis: 50%;
+}
+
+.panelHeading {
+  font-size: 30px;
+  color: #2f4575;
+}
+
+.themeTable {
+  border: 1px solid #bebebe;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.numVal {
+  color: #2984ff;
+}
+
+.themeTable thead {
+  font-size: 1.1rem;
+  background: #7359a6;
+  color: #fff;
+}
+
+.themeTable thead tr th, .themeTable tbody tr td {
+  padding: 10px 20px;
+}
+
+.themeTable tbody tr:nth-child(even) {
+  background: #ebe9ef;
+}
+
+.themeTable thead tr th {
+  font-weight: normal;
+}
+
+.action {
+  display: inline-flex;
+  margin: 5px;
+  height: 20px;
+  width: 24px;
+  text-decoration: none;
+}
+
+.action:hover {
+  opacity: 0.7;
+}
+
+.action.action_forward {
+  background: url("../assets/actions.png") no-repeat 0px center;
+}
+
+.action.action_download {
+  background: url("../assets/actions.png") no-repeat -28px center;
+}
+
+.action.action_view {
+  background: url("../assets/actions.png") no-repeat -62px center;
+}
+
+.action.action_delete {
+  background: url("../assets/actions.png") no-repeat -97px center;
+}
+
+.action.action_cart {
+  background: url("../assets/actions.png") no-repeat -128px center;
+}
+
+footer {
+  text-align: center;
+  background: #f4f2f8;
+  color: #4c6d79;
+  padding: 10px;
+}
+
+.animate {
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+@media (max-width: 992px) {
+  nav + div {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .flexResponsive {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .flexResponsive > * {
+    margin-bottom: 20px;
+  }
+
+  .inputControl {
+    width: 100%;
+  }
+}
+@keyframes slideIn {
+  0% {
+    margin-top: 2rem;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0.7rem;
+    opacity: 1;
+  }
+  0% {
+    margin-top: 2rem;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slideIn {
+  0% {
+    margin-top: 2rem;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0.7rem;
+    opacity: 1;
+  }
+  0% {
+    margin-top: 2rem;
+    opacity: 0;
+  }
+}
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+/*Date picker modifications*/
+div.datepicker {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.datepicker table tr td.active.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled.disabled, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled:hover.disabled, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active.disabled:hover[disabled], .datepicker table tr td.active.disabled[disabled], .datepicker table tr td.active:active, .datepicker table tr td.active:hover, .datepicker table tr td.active:hover.active, .datepicker table tr td.active:hover.disabled, .datepicker table tr td.active:hover:active, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active:hover[disabled], .datepicker table tr td.active[disabled] {
+  background-color: #7359a6;
+}
+
+.datepicker table tr td.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active:hover {
+  background-color: #7359a6;
+  background-image: -moz-linear-gradient(to bottom, #7359a6, #442e72);
+  background-image: -ms-linear-gradient(to bottom, #7359a6, #442e72);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7359a6), to(#442e72));
+  background-image: -webkit-linear-gradient(to bottom, #7359a6, #442e72);
+  background-image: -o-linear-gradient(to bottom, #7359a6, #442e72);
+  background-image: linear-gradient(to bottom, #7359a6, #442e72);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$lightColor", endColorstr="#0044cc", GradientType=0);
+  border-color: #442e72 #442e72 #211638;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.datepicker table tr td span.active.active, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled.disabled, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active.disabled:hover.active, .datepicker table tr td span.active.disabled:hover.disabled, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active.disabled:hover:hover, .datepicker table tr td span.active.disabled:hover[disabled], .datepicker table tr td span.active.disabled[disabled], .datepicker table tr td span.active:active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active:hover.active, .datepicker table tr td span.active:hover.disabled, .datepicker table tr td span.active:hover:active, .datepicker table tr td span.active:hover:hover, .datepicker table tr td span.active:hover[disabled], .datepicker table tr td span.active[disabled] {
+  background-color: #7359a6;
+}
+
+.datepicker table tr td span.active, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active:hover {
+  background-color: #7359a6;
+  background-image: -moz-linear-gradient(to bottom, #7359a6, #442e72);
+  background-image: -ms-linear-gradient(to bottom, #7359a6, #442e72);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7359a6), to(#442e72));
+  background-image: -webkit-linear-gradient(to bottom, #7359a6, #442e72);
+  background-image: -o-linear-gradient(to bottom, #7359a6, #442e72);
+  background-image: linear-gradient(to bottom, #7359a6, #442e72);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$lightColor", endColorstr="#0044cc", GradientType=0);
+  border-color: #442e72 #442e72 #211638;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+/*# sourceMappingURL=style.css.map */

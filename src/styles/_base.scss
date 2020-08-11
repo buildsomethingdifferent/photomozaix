@@ -1,0 +1,25 @@
+@import 'normalize';
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+$footer-background-color: #FFFFFF;
+$lightgray: #f4f2f8;
+$darkgray: #4c6d79;
+$pink: #c31d8a;
+$purple: #7359a6;
+$lightpurple: #b9acd2;
+$button-color: #FFFFFF;
+$button-hover-color: #FFFFFF;
+$button-active-color: #FFFFFF;
+$button-focus-color: #FFFFFF;
+$button-hover-background-color: $purple;
+$button-background-color: $pink;

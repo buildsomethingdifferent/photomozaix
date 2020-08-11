@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "photomozaix-app",
+    "production": "photomozaix-app"
+  }
+}
